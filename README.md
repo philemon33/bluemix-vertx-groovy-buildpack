@@ -7,6 +7,8 @@ Currently it uses following versions:
 * JDK **1.7**
 * Vert.x **2.1.4**
 
+You can vary those versions by adjusting the OPENJDK7_URL and VERTX_URL constants in the bin/compile file
+
 ## Usage
 
 This buildpack assumes that there are at least two files in repository:
