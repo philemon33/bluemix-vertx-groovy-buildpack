@@ -68,3 +68,6 @@ if [ ! -f Procfile ]; then
   echo "-----> No Procfile found. Will use the following default process: "
   echo "       vertx run server.js"
 fi
+
+mkdir  $BUILD_DIR/.profile.d
+echo 'export PATH=$PATH:$HOME/.jdk7/bin:$HOME/.vertx/bin' > $BUILD_DIR/.profile.d/vertx.sh  
