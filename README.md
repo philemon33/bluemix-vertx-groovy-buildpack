@@ -1,4 +1,4 @@
-# Heroku buildpack: Vert.x
+# Bluemix-compatible Buildpack: Vert.x
 
 This is a buildpack for [Vert.x](http://vertx.io/) apps, used to deploy vert.x apps in IBM Bluemix. An example app can be found [here](https://github.com/mthenw/vertx-sample).
 
