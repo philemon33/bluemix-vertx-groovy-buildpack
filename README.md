@@ -11,15 +11,14 @@ You can vary those versions by adjusting the OPENJDK7_URL and VERTX_URL constant
 
 ## Usage
 
-This buildpack assumes that there are at least two files in repository:
+This buildpack assumes that there are at least one file in repository:
 
-* ```mod.json``` - used to determine if this is vert.x project
-* ```server.js``` - by default file that will be launched (of course this can be overrided by Procfile)
+* ```server.js``` - file launched by default (of course this can be overrided by Procfile)
 
 Example usage:
 
     $ ls
-    mod.json server.js
+    server.js
 
     $ cf push myapp -b https://github.com/philemon33/bluemix-vertx-buildpack.git
 
