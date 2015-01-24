@@ -21,19 +21,10 @@ Example usage:
     $ ls
     mod.json server.js
 
-    $ heroku create --stack cedar --buildpack https://github.com/mthenw/heroku-buildpack-vertx.git
+    $ cf push myapp -b https://github.com/philemon33/bluemix-vertx-buildpack.git
 
-    $ git push heroku master
 
-    -----> Fetching custom git buildpack... done
-    -----> Vert.x app detected
-
-    -----> Installing OpenJDK7u2..... done
-    -----> Installing Vert.x..... done
-
-    -----> Launching... done
-
-This buildpack is based on [tomaslin/heroku-buildpack-vertx-jdk7](https://github.com/tomaslin/heroku-buildpack-vertx-jdk7).
+This buildpack is based on  [mthenw/heroku-buildpack-vertx.git](https://github.com/mthenw/heroku-buildpack-vertx.git), which is itself based on [tomaslin/heroku-buildpack-vertx-jdk7](https://github.com/tomaslin/heroku-buildpack-vertx-jdk7).
 
 ## License
 
