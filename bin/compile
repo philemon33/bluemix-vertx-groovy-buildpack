@@ -70,4 +70,5 @@ if [ ! -f Procfile ]; then
 fi
 
 mkdir  $BUILD_DIR/.profile.d
-echo 'export PATH=$PATH:$HOME/.jdk7/bin:$HOME/.vertx/bin' > $BUILD_DIR/.profile.d/vertx.sh  
+echo 'export PATH=$PATH:$HOME/.jdk7/bin:$HOME/.vertx/bin' > $BUILD_DIR/.profile.d/vertx.sh
+echo 'export VERTX_CP=$HOME/lib/cloudfoundry-runtime-0.8.6.jar' >> $BUILD_DIR/.profile.d/vertx.sh
