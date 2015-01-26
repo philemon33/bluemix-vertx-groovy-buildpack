@@ -13,6 +13,6 @@ EOF
 if [ ! -f $BUILD_DIR/Procfile ]; then
 cat <<EOF
 default_process_types:
-  web: vertx run server.groovy
+  web: vertx run server.groovy -cp list/cloudfoundry-runtime-0.8.6.jar
 EOF
 fi
