@@ -2,7 +2,7 @@
 
 This is a buildpack for [Vert.x](http://vertx.io/) apps, used to deploy vert.x apps in IBM Bluemix. An example app can be found [here](https://github.com/mthenw/vertx-sample).
 
-Currently it uses following versions:
+Currently it uses the following versions:
 
 * JDK **1.7**
 * Vert.x **2.1.4**
@@ -13,12 +13,12 @@ You can vary those versions by adjusting the OPENJDK7_URL and VERTX_URL constant
 
 This buildpack assumes that there are at least one file in repository:
 
-* ```server.js``` - file launched by default (of course this can be overrided by Procfile)
+* ```server.groovy``` - file launched by default (of course this can be overrided by Procfile)
 
 Example usage:
 
     $ ls
-    server.js
+    server.groovy
 
     $ cf push myapp -b https://github.com/philemon33/bluemix-vertx-buildpack.git
 
