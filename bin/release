@@ -8,13 +8,11 @@ cat <<EOF
 config_vars:
   PATH: .jdk7/bin:.vertx/bin:.tools:/usr/local/bin:/usr/bin:/bin
   JAVA_OPTS: -Xmx384m
+EOF
+
+if [ ! -f $BUILD_DIR/Procfile ]; then
+cat <<EOF
 default_process_types:
   web: vertx run server.groovy -cp lib/cloudfoundry-runtime-0.8.6.jar
 EOF
-
-//if [ ! -f $BUILD_DIR/Procfile ]; then
-//cat <<EOF
-//default_process_types:
-//  web: vertx run server.groovy -cp lib/cloudfoundry-runtime-0.8.6.jar
-//EOF
-//fi
+fi
